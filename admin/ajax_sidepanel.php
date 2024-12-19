@@ -2651,7 +2651,7 @@ function SaveSettings(){
         $installing_version = 'pro';
 
 		$output = json_decode(file_get_contents('../data.json'), true);
-
+        $output['success']=true;
         if ($output['success']) {
             if(isset($config['quickad_secret_file']) && $config['quickad_secret_file'] != ""){
                 $fileName = $config['quickad_secret_file'];
