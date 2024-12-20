@@ -37,7 +37,13 @@ $router->map('GET|POST','/test/?', 'global/test.php');
 
 $router->map('GET|POST','/ai-templates/?', 'app/ai-templates.php');
 $router->map('GET|POST','/ai-templates/[*:slug]/?', 'app/ai-template-create.php');
+
+
+
 $router->map('GET|POST','/ai-images/?', 'app/ai-images.php');
+$router->map('GET|POST','/ai-data-extract/?', 'app/ai-data-extract.php');
+
+
 $router->map('GET|POST','/all-images/?', 'app/all-images.php');
 $router->map('GET|POST','/all-documents/?', 'app/all-documents.php');
 $router->map('GET|POST','/all-documents/[*:id]/?', 'app/document.php');
